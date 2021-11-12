@@ -1,3 +1,5 @@
+//Swapnil Tiwari
+//Simple visualization of circle with music
 let song;
 let amp;
 let historyVol = [];
