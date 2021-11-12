@@ -5,7 +5,7 @@ let amp;
 let historyVol = [];
 
 function preload() {
-  song = loadSound("Jamie xx- All Under One Roof Raving.mp3");
+  song = loadSound("Jamie xx- All Under One Roof Raving.mp3"); //load sound
 }
 function setup() {
   createCanvas(400, 400);
@@ -15,7 +15,7 @@ function setup() {
 
 function draw() {
   background(0);
-  let vol = amp.getLevel();
+  let vol = amp.getLevel(); //returns amplitude level at a given time
   let bigVol = map(vol, 0, 1, 10, 400);
 
   noStroke();
