@@ -3,6 +3,7 @@
 
 let bubbles = [];
 
+//object bubble declared. input = x, y coordinate and radius.
 class Bubble {
   constructor(_x, _y, _r) {
     this.x = _x;
@@ -10,11 +11,13 @@ class Bubble {
     this.r = _r;
   }
 
+  //function to move with random value between -5 to 5 to show an effect
   move() {
     this.x = this.x + random(-5, 5);
     this.y = this.y + random(-5, 5);
   }
 
+  //function to show the circle
   show() {
     stroke(random(255), random(255), random(255));
     fill(random(255), random(255), random(255));

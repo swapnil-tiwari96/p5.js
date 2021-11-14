@@ -15,7 +15,7 @@ function setup() {
 
 function draw() {
   background(220);
-  volhistory.push(amp.getLevel()); //pushing vol values in the volhistory array
+  volhistory.push(amp.getLevel()); //pushing getlevels values in the volhistory array
   noFill();
   stroke(0);
   //plots the whole array on the canvas
