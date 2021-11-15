@@ -26,23 +26,8 @@ function step() {
   y = constrain(y, 0, height); // so that the point doesnt go off the canvas
   let num = floor(random(0, 4)); //create random value from 0-3
   //according to the number it decides where to move
-  switch (num) {
-    case 0:
-      x += 1;
-      break;
-
-    case 1:
-      y += 1;
-      break;
-
-    case 2:
-      x -= 1;
-      break;
-
-    case 3:
-      y -= 1;
-      break;
-  }
+  x += random(-1, 1);
+  y += random(-1, 1);
 
   //restrain randomness between 0-255
   r = constrain(r, 0, 255);

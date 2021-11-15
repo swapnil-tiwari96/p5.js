@@ -16,24 +16,9 @@ function draw() {
   x = constrain(x, 0, width); //so that the point doesnt go off the canvas
   y = constrain(y, 0, height); // so that the point doesnt go off the canvas
   let num = floor(random(0, 4)); //create random value from 0-3
-  //according to the number it decides where to move
-  switch (num) {
-    case 0:
-      x += 1;
-      break;
-
-    case 1:
-      y += 1;
-      break;
-
-    case 2:
-      x -= 1;
-      break;
-
-    case 3:
-      y -= 1;
-      break;
-  }
+  //randomly moves on x and y coordinate.
+  x += random(-1, 1);
+  y += random(-1, 1);
   point(x, y);
   console.log(num);
 }
