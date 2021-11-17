@@ -24,8 +24,6 @@ function step() {
   strokeWeight(5);
   x = constrain(x, 0, width); //so that the point doesnt go off the canvas
   y = constrain(y, 0, height); // so that the point doesnt go off the canvas
-  let num = floor(random(0, 4)); //create random value from 0-3
-  //according to the number it decides where to move
   x += random(-1, 1);
   y += random(-1, 1);
 
@@ -35,9 +33,9 @@ function step() {
   b = constrain(b, 0, 255);
 
   //to change color
-  r += random(-10, 10);
-  g += random(-5, 5);
-  b += random(-5, 5);
+  r += random(-1, 1);
+  g += random(-1, 1);
+  b += random(-1, 1);
 
   stroke(r, g, b);
   point(x, y);

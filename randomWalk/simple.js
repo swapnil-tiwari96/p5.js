@@ -15,7 +15,6 @@ function draw() {
   strokeWeight(5);
   x = constrain(x, 0, width); //so that the point doesnt go off the canvas
   y = constrain(y, 0, height); // so that the point doesnt go off the canvas
-  let num = floor(random(0, 4)); //create random value from 0-3
   //randomly moves on x and y coordinate.
   x += random(-1, 1);
   y += random(-1, 1);
