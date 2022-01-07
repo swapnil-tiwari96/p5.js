@@ -1,9 +1,12 @@
+//Swapnil Tiwari
+//10Print
+
 let sclx, scly;
 let x = 0;
 let y = 0;
 
 function preload() {
-  song = loadSound("FLP(VDO) AUDIO 39(weak sick).wav");
+  song = loadSound("Ry Legit - Buzz Lightyear (HD).mp3");
 }
 function keyPressed() {
   song.play();
